@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MISR TRAVELS - Weekly Dishes</title>
+  <style>
+    body {
+      background-color: #1a1a1a;
+      color: white;
+      font-family: 'Arial', sans-serif;
+      padding: 20px;
+    }
+
+    h1 {
+      color: goldenrod;
+    }
+
+    .dishes-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .dish-container {
+      display: flex;
+      flex-direction: row;
+      background-color: #333;
+      border-radius: 10px;
+      overflow: hidden;
+      width: calc(33.333% - 13.33px);
+      box-sizing: border-box;
+      height: 200px;
+    }
+
+    .dish-image {
+      width: 50%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .dish-text {
+      padding: 15px;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .dish-text strong {
+      color: goldenrod;
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    @media (max-width: 800px) {
+      .dish-container {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+      }
+
+      .dish-image,
+      .dish-text {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>MISR TRAVELS</h1>
+  <p>Here are our delicious picks for our clients this week. We hope you enjoy them!</p>
+
+  <div class="dishes-wrapper">
+
+    <div class="dish-container">
+      <div class="dish-text">
+        <strong>Pizza</strong>
+        Pizza is one of the world's favorite dishes. It consists of a baked dough base topped with tomato sauce, cheese, and a variety of toppings.
+      </div>
+      <img class="dish-image" src="images/pizza.jpg" alt="Pizza">
+    </div>
+
+    <div class="dish-container">
+      <div class="dish-text">
+        <strong>Croissant</strong>
+        The croissant is a buttery, flaky pastry that originated in France. It can be filled with chocolate, cheese, or simply served plain with coffee.
+      </div>
+      <img class="dish-image" src="images/Croissant.jpg" alt="Croissant">
+    </div>
+
+    <div class="dish-container">
+      <div class="dish-text">
+        <strong>Fish</strong>
+        Fish dishes are loved for their flavor and health benefits. Whether grilled, fried, or baked, fish is rich in protein and omega-3.
+      </div>
+      <img class="dish-image" src="images/fish.jpg" alt="Fish">
+    </div>
+
+    <div class="dish-container">
+      <div class="dish-text">
+        <strong>Broasted Chicken</strong>
+        Broasted chicken is a crispy and juicy delight with a golden crust and tender meat. Often served with fries, garlic sauce, and pickles.
+      </div>
+      <img class="dish-image" src="images/broasted.jpg" alt="Broasted Chicken">
+    </div>
+
+    <div class="dish-container">
+      <div class="dish-text">
+        <strong>Hamburger</strong>
+        A hamburger is made with a beef patty, lettuce, tomato, cheese, and sauces inside a soft bun. It's a classic fast food favorite.
+      </div>
+      <img class="dish-image" src="images/Hamburger.jpg" alt="Hamburger">
+    </div>
+
+    <div class="dish-container">
+      <div class="dish-text">
+        <strong>Kebab</strong>
+        Kebab is skewered and grilled meat, marinated in spices. Served with rice, salad, or bread — a flavorful Middle Eastern delight.
+      </div>
+      <img class="dish-image" src="images/Kebab.jpg" alt="Kebab">
+    </div>
+
+  </div>
+
+</body>
+</html>
