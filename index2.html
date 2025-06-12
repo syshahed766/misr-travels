@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Personal Data</title>
+  <style>
+    body {
+      background-color: maroon;
+      font-family: monospace;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      position: relative;
+      padding: 20px;
+    }
+
+    .header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #87CEFA;
+      color: black;
+      padding: 5px 10px;
+      font-weight: bold;
+      z-index: 10;
+    }
+
+    .name-area {
+      background-color: goldenrod;
+      padding: 40px 20px 20px 20px;
+      margin-top: 40px;
+      position: relative;
+    }
+
+    .yourname-box {
+      position: absolute;
+      top: 30px;
+      left: 20px;
+      transform: translateY(-50%);
+      background-color: blue;
+      color: white;
+      width: 80px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      box-shadow: 0 0 2px black;
+    }
+
+    .name-fields {
+      margin-left: 120px;
+      margin-top: 20px;
+    }
+
+    .name-fields label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .name-fields input {
+      margin-left: 10px;
+    }
+
+    
+    .form-section {
+      margin-top: 30px;
+    }
+
+    .form-row {
+      display: flex;
+      align-items: center;
+      margin: 0; 
+      padding: 0;
+    }
+
+    .form-row label {
+      width: 120px;
+      padding: 2px 0;
+    }
+
+    .form-row input {
+      width: 200px;
+      padding: 2px;
+    }
+
+    .radio-group label,
+    .checkbox-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .dropdown select {
+      width: 100px;
+      padding: 5px;
+    }
+
+    .submit-button {
+      background-color: black;
+      color: white;
+      padding: 5px 15px;
+      margin-top: 10px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">Personal Data</div>
+
+    <div class="name-area">
+      <div class="yourname-box">YourName</div>
+      <div class="name-fields">
+        <label>first name: <input type="text" value="ex:ahmed"></label>
+        <label>second name: <input type="text" value="ex:bahnasy"></label>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <div class="form-row">
+        <label>your phone :</label>
+        <input type="text">
+      </div>
+      <div class="form-row">
+        <label>Email :</label>
+        <input type="email">
+      </div>
+      <div class="form-row">
+        <label>password :</label>
+        <input type="password">
+      </div>
+      <div class="form-row">
+        <label>re-password :</label>
+        <input type="password">
+      </div>
+
+      <div class="radio-group">
+        <label><input type="radio" name="gender"> Male</label>
+        <label><input type="radio" name="gender"> Female</label>
+      </div>
+
+      <div class="checkbox-group">
+        <label><input type="checkbox"> Student</label>
+        <label><input type="checkbox"> Graduated</label>
+      </div>
+
+      <div class="dropdown">
+        <select>
+          <option>AUC</option>
+        </select>
+      </div>
+
+      <button class="submit-button">SUBMIT</button>
+    </div>
+  </div>
+
+</body>
+</html>
